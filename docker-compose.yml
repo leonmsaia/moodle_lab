@@ -1,0 +1,26 @@
+services:
+  db:
+    image: mariadb:10.6
+    container_name: moodle-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: moodle
+      MYSQL_USER: moodle
+      MYSQL_PASSWORD: moodlepassword
+    volumes:
+      - ./02-db:/var/lib/mysql
+    ports:
+      - "3307:3306"
+  moodle:
+    build:
+      context: ./00-docker/moodle
+    container_name: moodle-app
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    volumes:
+      - ./01-moodle:/var/www/html
+      - ./03-moodledata:/var/www/moodledata
