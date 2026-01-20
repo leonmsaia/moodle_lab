@@ -1,0 +1,8 @@
+{
+    "moodle-mod_eabcattendance-groupfilter": {
+        "requires": [
+            "base",
+            "node"
+        ]
+    }
+}

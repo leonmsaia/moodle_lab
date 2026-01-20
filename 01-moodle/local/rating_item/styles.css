@@ -1,0 +1,25 @@
+em {
+    display: block;
+    font-style: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grade-item {
+    padding: 6px;
+    /*position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.mform fieldset {
+    border-bottom: none !important;
+}
+
+.border-form {
+    border-bottom: 1px solid #ddd;
+}

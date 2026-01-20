@@ -31,6 +31,9 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
 
 RUN a2enmod rewrite
 
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN apache2ctl configtest
+
 RUN { \
   echo "display_errors=On"; \
   echo "display_startup_errors=On"; \

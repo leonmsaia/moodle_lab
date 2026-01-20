@@ -1,0 +1,78 @@
+{{!
+(25/11/2019 FHS)
+Search user form to take attendance 
+}}
+
+
+
+<form autocomplete="off" action="{{ruta}}" method="get" accept-charset="utf-8" class="mform">
+	<div style="display: none;">
+	
+		<input name="id" type="hidden" value="{{id}}">
+		<input name="sessionid" type="hidden" value="{{sessionid}}">
+		<input name="grouptype" type="hidden" value="{{grouptype}}">
+		<input name="studentid" type="hidden" value="{{studentid}}">
+		<input name="action" type="hidden" value="{{action}}">
+		<input name="perpage" type="hidden" value="0">
+
+	</div>
+
+
+	<fieldset class="clearfix collapsible" id="id_attheader">
+		<legend class="ftoggler"><a href="#" class="fheader" role="button" aria-controls="id_attheader" aria-expanded="true">{{header_label}}</a></legend>
+		<div class="fcontainer clearfix" id="yui_3_17_2_1_1574714797444_116">
+			<div id="fitem_id_tname" class="form-group row  fitem   ">
+				<div class="col-md-3">
+					<span class="float-sm-right text-nowrap">
+            
+					</span>
+					<label class="col-form-label d-inline "for="id_tname">
+						{{name_label}}
+					</label>
+				</div>
+    
+				<div class="col-md-9 form-inline felement" data-fieldtype="text">
+					<input type="text" class="form-control " name="nombre" id="id_tname" value="{{nombre}}" size="">
+						<div class="form-control-feedback invalid-feedback" id="id_error_tname">
+            
+						</div>
+				</div>
+			</div>
+			
+			<div id="fitem_id_tsurname" class="form-group row  fitem   ">
+				<div class="col-md-3">
+					<span class="float-sm-right text-nowrap">
+            
+					</span>
+					<label class="col-form-label d-inline " for="id_tsurname">
+						{{surname_label}}
+					</label>
+				</div>
+    
+				<div class="col-md-9 form-inline felement" data-fieldtype="text">
+					<input type="text" class="form-control " name="apellido" id="id_tsurname" value="{{apellido}}" size="">
+						<div class="form-control-feedback invalid-feedback" id="id_error_tsurname">
+            
+						</div>
+				</div>
+			</div>
+				<div id="fitem_id_submitbutton" class="form-group row  fitem femptylabel  ">
+					<div class="col-md-3">
+						<span class="float-sm-right text-nowrap">
+           
+						</span>
+						<label class="col-form-label d-inline " for="id_submitbutton">
+            
+						</label>
+					</div>
+					<div class="col-md-9 form-inline felement" data-fieldtype="submit" id="yui_3_17_2_1_1574714797444_115">
+						<input type="submit" class="btnbtn-primary" name="submitbutton" id="id_submitbutton" value="{{search_label}}">
+						
+						<div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
+            
+						</div>
+					</div>
+				</div>
+			</div>
+	</fieldset>
+</form>

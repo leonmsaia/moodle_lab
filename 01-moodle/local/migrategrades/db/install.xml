@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/migrategrades/db" VERSION="2025122201" COMMENT="XMLDB file for Moodle local/migrategrades"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_migrategrades_log" COMMENT="Trazabilidad migración de notas">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false"/>
+
+        <FIELD NAME="actorid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Usuario que ejecuta"/>
+        <FIELD NAME="username" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="shortname" TYPE="char" LENGTH="150" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="newuserid" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="newcourseid" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="status" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="updated|skipped|error"/>
+        <FIELD NAME="winner" TYPE="char" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="old|new|none"/>
+
+        <FIELD NAME="oldgrade" TYPE="number" LENGTH="20" NOTNULL="false" SEQUENCE="false" DECIMALS="10"/>
+        <FIELD NAME="newgrade" TYPE="number" LENGTH="20" NOTNULL="false" SEQUENCE="false" DECIMALS="10"/>
+
+        <FIELD NAME="applied_timeenrolled" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="applied_timecompleted" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="message" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="idx_actor_time" UNIQUE="false" FIELDS="actorid,timecreated"/>
+        <INDEX NAME="idx_user_course" UNIQUE="false" FIELDS="username,shortname"/>
+        <INDEX NAME="idx_status" UNIQUE="false" FIELDS="status"/>
+      </INDEXES>
+    </TABLE>
+
+    <TABLE NAME="local_migrategrades_company_log" COMMENT="Trazabilidad asignación empresa por SOAP">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false"/>
+
+        <FIELD NAME="actorid" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="Usuario que ejecuta"/>
+        <FIELD NAME="username" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false" COMMENT="RUT/username procesado"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="empresarut" TYPE="char" LENGTH="20" NOTNULL="false" SEQUENCE="false" COMMENT="rut-dv empresa"/>
+        <FIELD NAME="companyid" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="status" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="inserted|updated|exists|skipped|error"/>
+        <FIELD NAME="message" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+
+        <FIELD NAME="soap_error" TYPE="char" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="soap_mensaje" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="idx_actor_time" UNIQUE="false" FIELDS="actorid,timecreated"/>
+        <INDEX NAME="idx_username" UNIQUE="false" FIELDS="username"/>
+        <INDEX NAME="idx_status" UNIQUE="false" FIELDS="status"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,62 @@
+{{#program}}
+
+<p style="text-align: center"><h2>CERTIFICADO DE PROGRAMA</h2></p>
+
+<p style="text-align: center; text-transform: uppercase;"><h2><u>{{description}}</u></h2></p>
+
+<p>Mutual de Seguridad certifica que trabajador(a) ha participado y ha aprobado de forma
+satisfactoria programa e-learning cuya duración es de {{horas}}hrs. pedagógicas.</p>
+
+  <table class="table" border="1">
+    <thead>
+    <tr style="text-align: center">
+      <td colspan="2"><strong size=1>{{empresa}}</strong></td>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="text-align: center">
+      <td>Rut: {{rut_empresa}}</td>
+      <td>N° Adh: {{adherente}}</td>
+    </tr>
+  </tbody>
+  </table>
+
+  <table class="table" border="1">
+  <thead>
+    <tr style="text-align: center">
+      <td colspan="2"><strong size=1></strong></td>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="text-align: center">
+      <td>Participante: {{usuario}}</td>
+      <td>Rut: {{rut_usuario}}</td>
+    </tr>
+  </tbody>
+  </table>
+<p>Las competencias entregadas estuvieron relacionadas con los siguientes contenidos:</p>
+  <table class="table" border="1" width="100%">
+    {{! <thead> }}
+    <tr style="text-align: center; background-color: #CBDBF4;">
+      <td width="45%" scope="col"><b>Cursos</b></td>
+      <td width="15%" scope="col"><b>Asistencia</b></td>
+      <td width="15%" scope="col"><b>Calificación</b></td>
+      <td width="10%" scope="col"><b>Nota</b></td>
+      <td width="15%" scope="col"><b>Fecha Finalización</b></td>
+    </tr>
+  {{! </thead> }}
+  <tbody>
+    {{#courses}}
+    <tr style="text-align: center">
+      <td width="45%">{{name}}</td>
+      <td width="15%">{{asistencia}}%</td>
+      <td width="15%">{{calificacion}}%</td>
+      <td width="10%">{{nota}}</td>
+      <td width="15%">{{fincurso}}</td>
+    </tr>
+    {{/courses}}
+    
+  </tbody>
+  </table>
+
+{{/program}}

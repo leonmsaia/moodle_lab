@@ -1,0 +1,80 @@
+<style type="text/css">
+
+td, tr, th {
+    padding: 10px 0px 0px 0px !important;
+    height: 100%;
+   
+}
+table {
+    margin-bottom: 0px !important;
+}
+
+
+.tftable {
+  font-size: 10px; color:#333333; width:82%;
+  display: table;
+  }
+.tftable th {
+  font-size:9;
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color:#acc8cc;
+  font-weight: 800;
+
+
+  display: table-cell; vertical-align: middle;
+
+  }
+.tftable tr {background-color:#d4e3e5;}
+.tftable td {
+  font-size: 10px;
+  
+  border: 1px solid #acc8cc;
+
+  display: table-cell; vertical-align: middle;
+  padding-bottom: 10px !important;
+    padding-top: 10px !important;
+
+}
+.nombrecurso {
+  width: 55%;
+  max-width: 55%;
+}
+.center {
+  text-align:center;
+}
+
+
+
+
+</style>
+
+
+<div>
+    {{{bodypdf}}}
+</div>
+
+<br>
+<div style="width:100%;">
+    
+    <table class="tftable table table-bordered" >
+        <tr>
+            <th class="nombrecurso center" >{{# str }} nombrecurso, local_resumencursos {{/ str }}</th>
+            <th class="center" style="width: 70px;">{{# str }} time, local_resumencursos {{/ str }}</th>
+            <th class="center">{{# str }} modalidad, local_resumencursos {{/ str }}</th>
+            <th class="center">{{# str }} caducidad, local_resumencursos {{/ str }}</th>
+            <th class="center" style="width: 70px;">{{# str }} calificacion, local_resumencursos {{/ str }}</th>
+        </tr>
+        {{#dataws}}
+            <tr>
+                <td class="nombrecurso">{{fullnamecourse}}</td>
+                <td class="center">{{horas}}</td>
+                <td class="center">{{modalidad}}</td>
+                <td class="center">{{final_date}}</td>
+                <td class="center">{{grade}}</td>
+            </tr>
+        {{/dataws}}
+    </table>
+</div>
+<br><br>
+

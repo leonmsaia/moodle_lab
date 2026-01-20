@@ -1,0 +1,43 @@
+.div20.divsetbycourses.col-md-3.eabcdiv20 .datadiv {
+  border-color: #ffffff;
+}
+.div20.divsetbycourses.col-md-3.eabcdiv20 .datadiv .datatext,
+.div20.divsetbycourses.col-md-3.eabcdiv20 .datadiv.eabcdatadiv .datatext {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.div20.divsetbycourses.col-md-3.eabcdiv20 .datadiv,
+.div20.divsetbycourses.col-md-3.eabcdiv20 .datadiv.eabcdatadiv {
+  background: #dbecff;
+  padding: 10px;
+  background: -moz-linear-gradient(
+    45deg,
+    #dbecff 0%,
+    #dbecff 38%,
+    #ffffff 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #dbecff 0%,
+    #dbecff 38%,
+    #ffffff 100%
+  );
+  background: linear-gradient(45deg, #dbecff 0%, #dbecff 38%, #ffffff 100%);
+  min-height: 230px !important;
+  -webkit-box-shadow: 0px 4px 5px -1px rgba(94, 94, 94, 0.4);
+  box-shadow: 0px 4px 5px -1px rgba(94, 94, 94, 0.4);
+}
+.row.divsetbycourses {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .div20.divsetbycourses.col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .div20 {
+    width: 100% !important;
+  }
+}

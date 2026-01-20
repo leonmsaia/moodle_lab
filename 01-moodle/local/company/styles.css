@@ -1,0 +1,10 @@
+/* Simple styles scoped to the local/company plugin */
+body.local-company .company-search { margin-bottom: 1rem; }
+body.local-company .company-search input[type="text"] { width: 300px; display: inline-block; margin-right: .5rem; }
+body.local-company table.users { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+body.local-company table.users th, body.local-company table.users td { padding: .5rem; border: 1px solid #ddd; }
+body.local-company table.users tr:nth-child(even) { background: #f9f9f9; }
+body.local-company .users input[type="checkbox"] { transform: scale(1.1); }
+body.local-company .btn-assign { background: #0073aa; color: #fff; padding: .4rem .8rem; border-radius: 4px; text-decoration: none; }
+body.local-company .btn-assign:hover { background: #005a87; }
+body.local-company .assigned-search { margin-top: 2rem; margin-bottom: 1rem; }

@@ -1,0 +1,44 @@
+define([
+  "jquery",
+  "core/modal_factory",
+  "core/modal_events",
+  "core/templates",
+  "core/str",
+], function ($, ModalFactory, ModalEvents, Templates, str) {
+  return {
+    init: function (params) {
+        console.log(params);
+      str
+        .get_strings([
+          { key: "ok", component: "local_checkconfig" },
+          { key: "dontshowagain", component: "local_checkconfig" },
+          { key: "modaltitle", component: "local_checkconfig" },
+        ])
+        .done(function (strings) {
+          ModalFactory.create({
+            type: ModalFactory.types.SAVE_CANCEL,
+            title: strings[2],
+            body: Templates.render("local_checkconfig/modal", {
+              alerts: params.checks,
+              allowexclude: params.allowexclude,
+            }),
+          }).done(function (modal) {
+            if (params.allowexclude != "0") {
+              modal.setSaveButtonText(strings[1]);
+              modal.getRoot().on(ModalEvents.save, function () {
+                $.get(`${M.cfg.wwwroot}/local/checkconfig/ajax.php`, {
+                  action: "exclude",
+                  courseid: params.courseid,
+                }).done(function (data) {
+                  console.log(data);
+                });
+              });
+            } else {
+              modal.setSaveButtonText(strings[0]);
+            }
+            modal.show();
+          });
+        });
+    },
+  };
+});

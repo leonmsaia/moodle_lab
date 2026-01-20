@@ -1,0 +1,16 @@
+<div class="showfilters">
+    {{{filters}}}
+</div>
+<button type="button" class="btn btn-info toggle-filter">{{#str}} showhidefilter, local_showallactivities {{/str}}</button>
+<br>
+<h1>{{# str }} pluginname, local_resumencursos {{/ str }}</h1>
+<br>
+{{{table_body}}}
+<br>
+{{#active_pdf}}
+    <div>
+        <a class="btn btn-primary" href="donwloadcertificate.php" target="_blank">
+            {{# str }} descargar, local_resumencursos {{/ str }}
+        </a>
+    </div>
+{{/active_pdf}}

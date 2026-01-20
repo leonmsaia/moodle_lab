@@ -1,0 +1,35 @@
+<li id="section-0" data-section="0" class="section main clearfix" role="region">
+{{#session}} 
+<div>{{# str }} sessionuser, format_eabctiles {{/ str }}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>{{# str }} finicio, format_eabctiles {{/ str }}</th>
+            <th class="text-center">{{# str }} durationses, format_eabctiles {{/ str }}</th>
+            {{#is_course_streaming}} 
+                <th class="text-center" >{{# str }} urlsminarioweb, format_eabctiles {{/ str }}</th>
+            {{/is_course_streaming}}  
+            {{^is_course_streaming}} 
+                <th>{{# str }} status, format_eabctiles {{/ str }}</th>
+            {{/is_course_streaming}}
+        </tr>
+        </thead>
+        <tbody>
+        {{#sesiones}}
+           <tr>
+                <td>{{finicio}}</td>
+                <td class="text-center">{{duracion}}</td>
+                {{#is_course_streaming}} 
+                    <td class="text-center" >{{{urlseminarioweb}}}</td>
+                {{/is_course_streaming}}  
+                {{^is_course_streaming}} 
+                    <td>{{estatus}}</td>
+                {{/is_course_streaming}}
+                
+            </tr>
+        {{/sesiones}}
+        </tbody>
+    </table>
+</div>
+{{/session}}  
+</li>

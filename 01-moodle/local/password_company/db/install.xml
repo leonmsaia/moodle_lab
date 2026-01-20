@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/password_company/db" VERSION="20240529" COMMENT="XMLDB file for Moodle local/password_company"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_password_company" COMMENT="Default comment for local_password_company, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="companyid" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="user_assign" TYPE="int" LENGTH="20" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="companyid_index" UNIQUE="false" FIELDS="companyid"/>
+        <INDEX NAME="timemodified_index" UNIQUE="false" FIELDS="timemodified"/>
+        <INDEX NAME="user_assign_index" UNIQUE="false" FIELDS="user_assign"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

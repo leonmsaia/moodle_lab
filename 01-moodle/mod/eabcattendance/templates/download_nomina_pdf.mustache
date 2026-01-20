@@ -1,0 +1,68 @@
+<style>
+    table, th, td {
+        border: 1px solid #4f5150;
+    }
+    .size-title {
+        font-size:  20px;
+    }
+    .center {
+        text-align: center; 
+    }
+    .heighttd {
+        height: 38px;
+    }
+</style>
+
+<div id="">
+    <div class="size-title center">
+        <b>{{#str }} downloadnomina, mod_eabcattendance {{/str }}</b>
+    </div>
+
+    <div>
+        {{#head}}
+            <div>
+                <b>{{head}}</b> : {{data}}
+            </div>
+        {{/head}}
+        
+    </div>
+<br>
+<br>
+    <div>
+        <table style="display: table;width: 100%;" class="table-resposive table-bordered">
+            <thead>
+              <tr>
+                {{#tableheader}}
+                    <th class="center">{{data}}</th>
+                {{/tableheader}}
+              </tr>
+            </thead>
+            <tbody >
+                {{#tablebody}}
+                    <tr>
+                        {{#row}}
+                            <td  class="center heighttd">{{data}}</td>
+                        {{/row}}
+                    </tr>
+                {{/tablebody}}
+            </tbody>
+        </table>
+    </div>
+<br>
+<br>
+<br>
+    <div>
+        {{#facilitadores}}
+            <div>
+                <div class="center">_________________________</div>
+                <div class="center">{{data}}</div>
+            </div>
+        {{/facilitadores}}    
+    </div>
+</div>
+
+
+
+
+            
+            

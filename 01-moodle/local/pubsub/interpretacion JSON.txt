@@ -1,0 +1,21 @@
+
+guid =  $msg->guid;
+$data->id = (buscar en la tabla "eabcattendance_course_gu" el "courseid" a partir del "guid")
+$data->idnumber = vacio
+$data->shortname = $msg->mensaje[get_config('local_pubsub', 'courseshortname')];
+$data->visible = '1';
+$data->fullname = $msg->mensaje[get_config('local_pubsub', 'coursename')];
+$data->hiddensections = "0";
+$data->coursedisplay = "0";
+$data->category = $msg->mensaje[get_config('local_pubsub', 'coursecategory')];
+
+        
+$data->summary_editor = new array(
+								'text' => $msg->mensaje['Descripcion'] . " <br>Horas de cursado: " . $msg->mensaje['Horas'] . " <br> Modalidad: " . $msg->mensaje['Modalidad'] . " <br> Objetivos: " . $msg->mensaje['Objetivo']." <br> Objetivos: Tematica:" . $msg->mensaje['Tematica'], 
+								'format' => "1", 
+								'itemid' => ? (obligatorio)
+								 );
+								  								 
+$data->startdate = $msg->mensaje['MinimoTiempo']  (?) (opcional)
+$data->enddate = $msg->mensaje['MaximoTiempo']	 (?) (opcional)
+get_config('local_pubsub', 'coursecategory') = 'TipoCurso' (?) (opcional)

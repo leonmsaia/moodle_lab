@@ -1,0 +1,33 @@
+
+<div style="    border-bottom: 2px solid #E6E9ED; margin-bottom:30px;
+    padding: 1px 5px 6px;">
+     FAQ preguntas frecuentes
+</div>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mail_list_column" style="border-left: 1px solid #DBDBDB;">
+            <a href="#">
+                <div class="mail_list" style="    width: 100%;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 2px;
+    display: inline-block;">
+                    <div class="right" style="    width: 90%;float: left;">
+                        <h3>Dennis Mugo <small>3.00 PM</small></h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-8" style="border-left: 1px solid #DBDBDB;">
+            contenido
+        </div>
+    </div>
+</div>
+
+{{#js}}
+    require(['local_help/help'], function(help) {
+        help.init("test desde template");
+    });
+{{/js}}

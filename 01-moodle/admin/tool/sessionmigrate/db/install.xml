@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="admin/tool/sessionmigrate/db" VERSION="2025111100" COMMENT="XMLDB file for Moodle admin/tool/sessionmigrate"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="tool_sessionmigrate_log" COMMENT="Logs for session migration tool tasks">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="action" TYPE="char" LENGTH="100" NOTNULL="true" COMMENT="The action being performed, e.g., sync_closed_sessions"/>
+                <FIELD NAME="targettype" TYPE="char" LENGTH="50" NOTNULL="true" COMMENT="The type of the target identifier, e.g., productoid, sessionid"/>
+                <FIELD NAME="targetidentifier" TYPE="char" LENGTH="255" NOTNULL="true" COMMENT="The identifier of the target, e.g., the productoid or sessionid"/>
+                <FIELD NAME="status" TYPE="char" LENGTH="50" NOTNULL="true" DEFAULT="created" COMMENT="The status of the task (created, running, success, failed)"/>
+                <FIELD NAME="message" TYPE="text" NOTNULL="false" COMMENT="Log message, typically for errors"/>
+                <FIELD NAME="details" TYPE="text" NOTNULL="false" COMMENT="Additional details in JSON or text"/>
+                <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="The user who triggered the action"/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true"/>
+                <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

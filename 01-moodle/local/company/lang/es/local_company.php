@@ -1,0 +1,32 @@
+<?php
+
+$string['pluginname'] = 'Empresas';
+$string['managecompanies'] = 'Administrar empresas';
+$string['companyname'] = 'Nombre empresa';
+$string['companyshortname'] = 'Nombre corto empresa';
+$string['companycity'] = 'Ciudad';
+$string['companyrut'] = 'RUT';
+$string['createcompany'] = 'Crear empresa';
+$string['companycontrato'] = 'Contrato';
+$string['savecompany'] = 'Guardar empresa';
+$string['companycreated'] = 'Empresa creada con éxito';
+$string['companycreateerror'] = 'Hubo un error al crear la empresa';
+$string['defaultcountry'] = 'CL';
+$string['companyupdated'] = 'Empresa actualizada con éxito';
+$string['companyupdateerror'] = 'Hubo un error al actualizar la empresa';
+$string['actions'] = 'Acciones';
+$string['edit'] = 'Editar';
+$string['nocompanies'] = 'No se encontraron empresas';
+$string['search'] = 'Buscar';
+$string['searchbutton'] = 'Buscar';
+$string['perpage'] = 'Por página';
+$string['assignusers'] = 'Asignar usuarios';
+$string['assignselected'] = 'Asignar usuarios seleccionados';
+$string['usersassigned'] = 'Se asignaron {$a} usuarios a la empresa';
+$string['nousersunassigned'] = 'No hay usuarios sin asignar';
+$string['assignedusers'] = 'Usuarios asignados';
+$string['unassignselected'] = 'Desasignar usuarios seleccionados';
+$string['usersunassigned'] = 'Se desasignaron {$a} usuarios de la empresa';
+$string['nousersassigned'] = 'No hay usuarios asignados a esta empresa';
+$string['remove'] = 'Quitar';
+$string['backtoindex'] = 'Volver al listado de empresas';

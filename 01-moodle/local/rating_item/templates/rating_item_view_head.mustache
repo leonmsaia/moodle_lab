@@ -1,0 +1,18 @@
+<div class="row border-form" >
+    <div class="col-md-6 user-info" >
+        <div data-region="user-info" class="" data-assignmentid="1" data-groupid="0" data-userid="{{userid}}" style="">
+            <h4>
+                {{{ image }}}
+                <a href="{{cfg.wwwroot}}/user/view.php?id={{userid}}&course={{courseid}}">
+                    {{ firstname }} {{ lastname }}
+                    <em class="nowrap">
+                        <small> {{ email }} </small>
+                    </em>
+                </a>
+            </h4>
+        </div>
+    </div>
+    <div class="col-md-6">
+        {{{outputratinghtml}}}
+    </div>
+</div>

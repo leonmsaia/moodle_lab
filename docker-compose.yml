@@ -12,9 +12,9 @@ services:
       - ./02-db:/var/lib/mysql
     ports:
       - "3307:3306"
+
   moodle:
-    build:
-      context: ./00-docker/moodle
+    image: moodlehq/moodle-php-apache:8.3
     container_name: moodle-app
     restart: unless-stopped
     depends_on:
@@ -22,5 +22,42 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./01-moodle:/var/www/html
+      - ./00-docker/php/dev.ini:/usr/local/etc/php/conf.d/99-dev.ini
+      - ./04-moodle-core:/var/www/html
       - ./03-moodledata:/var/www/moodledata
+
+      # Plugins / custom del cliente
+      # - ./01-moodle/course/format/eabctiles:/var/www/html/course/format/eabctiles
+      # - ./01-moodle/local/pubsub:/var/www/html/local/pubsub
+      # - ./01-moodle/local/help:/var/www/html/local/help
+      # - ./01-moodle/local/mutualnotifications:/var/www/html/local/mutualnotifications
+      # - ./01-moodle/local/mutual:/var/www/html/local/mutual
+      # - ./01-moodle/local/download_cert:/var/www/html/local/download_cert
+      # - ./01-moodle/local/sendgrade:/var/www/html/local/sendgrade
+      # - ./01-moodle/local/validatestatus:/var/www/html/local/validatestatus
+      # - ./01-moodle/local/password_company:/var/www/html/local/password_company
+      # - ./01-moodle/local/eabccalendar:/var/www/html/local/eabccalendar
+      # - ./01-moodle/local/resumencursos:/var/www/html/local/resumencursos
+      # - ./01-moodle/local/eabcourses:/var/www/html/local/eabcourses
+      # - ./01-moodle/local/mutualreport:/var/www/html/local/mutualreport
+      # - ./01-moodle/local/checkconfig:/var/www/html/local/checkconfig
+      # - ./01-moodle/local/company:/var/www/html/local/company
+      # - ./01-moodle/local/holdingmng:/var/www/html/local/holdingmng
+      # - ./01-moodle/local/cron:/var/www/html/local/cron
+      # - ./01-moodle/local/eabcprogramas:/var/www/html/local/eabcprogramas
+      # - ./01-moodle/local/questionnaire_report:/var/www/html/local/questionnaire_report
+      # - ./01-moodle/local/showallactivities:/var/www/html/local/showallactivities
+      # - ./01-moodle/local/rating_item:/var/www/html/local/rating_item
+      # - ./01-moodle/local/eabcpanelcursos:/var/www/html/local/eabcpanelcursos
+      # - ./01-moodle/local/encuesta_movilidad:/var/www/html/local/encuesta_movilidad
+      # - ./01-moodle/local/enrolcompany:/var/www/html/local/enrolcompany
+      # - ./01-moodle/local/feedback_facilitador:/var/www/html/local/feedback_facilitador
+      # - ./01-moodle/local/survey_summary:/var/www/html/local/survey_summary
+      # - ./01-moodle/message/output/emma:/var/www/html/message/output/emma
+      # - ./01-moodle/mod/eabcattendance:/var/www/html/mod/eabcattendance
+      # - ./01-moodle/mod/linkgrade:/var/www/html/mod/linkgrade
+      # - ./01-moodle/blocks/recommend_courses:/var/www/html/blocks/recommend_courses
+      # - ./01-moodle/availability/condition/days:/var/www/html/availability/condition/days
+      # - ./01-moodle/availability/condition/eabcgroup:/var/www/html/availability/condition/eabcgroup
+      # - ./01-moodle/local/sso:/var/www/html/local/sso
+      # - ./01-moodle/theme/mutualseguridad:/var/www/html/theme/mutualseguridad

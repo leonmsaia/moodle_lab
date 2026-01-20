@@ -1,0 +1,16 @@
+define(['jquery', 'core/ajax'], function($, Ajax) {
+    return {
+        init: function() {
+            $('.selectfag').click(function(){
+                var id = $(this).data('id');
+                $.ajax({
+                    url: 'loadfaq.php?id=' + id,
+                    dataType: 'text',
+                    success: function (result) {
+                        $('.dinami_content').html(result);
+                    }
+                });
+            });
+        }
+    }
+});

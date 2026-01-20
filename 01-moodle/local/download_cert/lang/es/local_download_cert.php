@@ -1,0 +1,32 @@
+<?php
+
+$string['pluginname'] = 'Descargar certificado';
+$string['days'] = 'Días';
+$string['days_desc'] = 'Dias para aprobar el curso';
+$string['task_end_training'] = 'Finalizar capacitacion elearning';
+$string['clean_table_log'] = 'Borrar tabla de registro finalizacion';
+$string['texttitlepdfcertificate'] = 'C E R T I F I C A D O <br><u>DESARROLLO DE CAPACITACION OCUPACIONAL</u>';
+$string['textbodypdfcertificate'] = 'Mutual de Seguridad C.CH.C., certifica que el trabajador {$a->name} Rut {$a->rut} ha(an) participado en la(s) siguiente(s) actividades de capacitación durante el periodo: {$a->year}';
+$string["coursenamecertificate"] = 'Nombre curso:  {$a}';
+$string["datefinishcertificate"] = 'REALIZADO:  {$a}';
+$string["companyname"] = 'Nombre empresa:  {$a}';
+$string["grade"] = 'Calificación:  {$a}';
+$string["status"] = 'Estado:  {$a}';
+$string["errormsg"] = '{$a}';
+$string["yearsexpirationcertificate"] = 'Años de expiración del certificado';
+$string["validationformatnumbercertificate"] = 'solo se permiten números';
+$string["notempty"] = 'No puede estar vacío';
+$string["expirationdate"] = 'Fecha de caducidad: {$a}';
+$string['download_cert:configyear_certificate'] = 'Configurar años de caducidad de certificados';
+$string["downloadcertificate"] = 'Descargar certificado';
+$string["certificateexpiration"] = 'Configurar caducidad de certificado';
+$string["notaccespageconfigyear"] = 'No tiene permiso para ver la página configurar años de caducidad del certificado';
+$string["aprobado"] = 'Aprobado';
+$string["reprobado"] = 'Reprobado';
+$string["completion_attendance"] = 'Valor para completar actividad asistencia';
+$string["completion_attendance_desc"] = 'Valor para completar actividad asistencia (Defecto 100)';
+$string["completion_mod_ilerning"] = 'Tipo de actividad necesario para completar curso elerning';
+$string["completion_mod_ilerning_desc"] = 'Tipo de actividad necesario para completar curso elerning (Defecto feedback)';
+$string["completion_mod_presencial"] = 'Tipo de actividad necesario para completar curso presencial';
+$string["completion_mod_presencial_desc"] = 'Tipo de actividad necesario para completar curso elerning (Defecto feedback)';
+$string["config_years_certificate"] = 'Configuración año certificado.';

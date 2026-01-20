@@ -1,0 +1,295 @@
+.path-mod-eabcattendance .attbtn {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+}
+
+.path-mod-eabcattendance .attcurbtn {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px;
+}
+
+.path-mod-eabcattendance .attfiltercontrols {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.path-mod-eabcattendance .attfiltercontrols #currentdate {
+    display: inline;
+}
+
+.path-mod-eabcattendance .attwidth {
+    margin: auto;
+}
+
+.path-mod-eabcattendance .userwithoutenrol,
+.path-mod-eabcattendance .userwithoutenrol a {
+    color: gray;
+}
+
+.path-mod-eabcattendance .userwithoutdata,
+.path-mod-eabcattendance .userwithoutdata a {
+    color: red;
+}
+
+.path-mod-eabcattendance .takelist td {
+    vertical-align: middle;
+}
+
+.path-mod-eabcattendance .takelist .userpicture {
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+.path-mod-eabcattendance .takegrid input {
+    margin: 0 3px 0 6px;
+}
+
+.path-mod-eabcattendance .takegrid .fullname {
+    font-size: 0.8em;
+}
+
+.path-mod-eabcattendance table.controls {
+    text-align: center;
+    width: 100%;
+}
+
+.path-mod-eabcattendance table.controls tr {
+    vertical-align: top;
+}
+
+.path-mod-eabcattendance table.controls td.right,
+.path-mod-eabcattendance table.controls td.left {
+    padding: 4px;
+}
+
+.path-mod-eabcattendance table.controls .right {
+    text-align: right;
+}
+/* for IE7*/
+.path-mod-eabcattendance .filtercontrols td {
+    padding: 6px;
+}
+
+.path-mod-eabcattendance .takecontrols {
+    margin: 0 auto 20px auto;
+    width: 800px;
+}
+.path-mod-eabcattendance .takecontrols table {
+    margin: 0 auto;
+}
+.path-mod-eabcattendance .takecontrols .c0 {
+    text-align: left;
+    width: 500px;
+}
+.path-mod-eabcattendance .takecontrols .c1 {
+    text-align: right;
+}
+
+.path-mod-eabcattendance .inline,
+.path-mod-eabcattendance .inline form,
+.path-mod-eabcattendance .inline div {
+    display: inline;
+}
+
+.path-mod-eabcattendance table.userinfobox {
+    border: 1px solid #eee;
+    padding: 0;
+}
+.path-mod-eabcattendance table.userinfobox td.left {
+    background-color: #eee;
+    padding: 30px 10px;
+}
+.path-mod-eabcattendance table.attlist td.c0 {
+    text-align: right;
+}
+
+#page-mod-eabcattendance-preferences .generalbox {
+    text-align: center;
+}
+
+.path-mod-eabcattendance .attsessions_manage_table .action-icon img.smallicon {
+    margin-left: 5px;
+}
+#page-mod-eabcattendance-sessions input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+.path-mod-eabcattendance .setallstatuses {
+    text-align: right;
+}
+
+.path-mod-eabcattendance .remarkholder {
+    position: relative;
+}
+
+.path-mod-eabcattendance .remarkholder .remarkcontent {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px #ccc;
+    display: none;
+    left: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 150px;
+    z-index: 5000;
+}
+
+.path-mod-eabcattendance .remarkholder:hover .remarkcontent {
+    display: inline-block;
+}
+
+.path-mod-eabcattendance .eabcattendancestatus-P {
+    color: green;
+}
+
+.path-mod-eabcattendance .eabcattendancestatus-E {
+    color: #00aee3;
+}
+
+.path-mod-eabcattendance .eabcattendancestatus-L {
+    color: #f7931e;
+}
+
+.path-mod-eabcattendance .eabcattendancestatus-A {
+    color: red;
+}
+
+.path-mod-eabcattendance .attreport .contrast {
+    background-color: #eaeaea;
+}
+
+.path-mod-eabcattendance .attreport .center {
+    text-align: center;
+}
+
+.path-mod-eabcattendance .attreport .left {
+    text-align: left;
+}
+
+.path-mod-eabcattendance .attreport .bottom {
+    vertical-align: bottom;
+}
+
+.path-mod-eabcattendance .attreport .nowrap {
+    white-space: nowrap;
+}
+
+.path-mod-eabcattendance .attreport .narrow {
+    width: 1px;
+}
+
+.path-mod-eabcattendance .attreport img.userpicture {
+    max-width: inherit;
+}
+
+.path-mod-eabcattendance .student-password {
+    font-size: x-large;
+    text-align: center;
+}
+.path-mod-eabcattendance .ungraded {
+    font-size: smaller;
+    font-style: italic;
+}
+#page-mod-eabcattendance-sessions .statusgroup .statusdesc {
+    margin-right: 12px;
+}
+
+#page-mod-eabcattendance-view .averageeabcattendance {
+    font-weight: bold;
+}
+
+#page-mod-eabcattendance-preferences .form-control {
+    width: inherit;
+    display: inherit;
+}
+
+@media (max-width: 767px) {
+    .path-mod-eabcattendance .remarkscol {
+        display: none;
+    }
+
+    .path-mod-eabcattendance .statusgroup .form-check-inline {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #page-mod-eabcattendance-view .colatt {
+        display: none;
+    }
+
+    .path-mod-eabcattendance .attfiltercontrols,
+    .path-mod-eabcattendance .attwidth {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .path-mod-eabcattendance .desccol {
+        display: none;
+    }
+
+    .path-mod-eabcattendance .pointscol {
+        display: none;
+    }
+
+    .path-mod-eabcattendance .attfiltercontrols #currentdate {
+        display: none;
+    }
+
+    #page-mod-eabcattendance-view .colsessionscompleted,
+    #page-mod-eabcattendance-view .colpointssessionscompleted {
+        display: none;
+    }
+}
+
+#page-mod-eabcattendance-report .eabcattendancereporttable {
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding: 0;
+    margin-left: 180px;
+}
+
+#page-mod-eabcattendance-report .eabcattendancereporttable .headcol {
+    position: absolute;
+    width: 200px;
+    left: 10px;
+    top: auto;
+    border-top-width: 1px;
+}
+
+#page-mod-eabcattendance-report .eabcattendancereporttable .headcol input[type='checkbox'] {
+    margin-right: 4px;
+
+}
+
+.eabcattendancereporttable img.icon {
+    padding-left: 5px;
+}
+
+/* CSS for old clean based themes with docks etc. */
+#page-mod-eabcattendance-report.has-region-side-pre .eabcattendancereporttable .headcol {
+    left: 370px;
+}
+
+#page-mod-eabcattendance-report.has-region-side-pre .eabcattendancereporttable {
+    margin-left: 230px;
+}
+
+#page-mod-eabcattendance-report.has-region-side-pre.content-only .eabcattendancereporttable .headcol {
+    left: 80px;
+}
+
+@media (max-width: 767px) {
+    #page-mod-eabcattendance-report.has-region-side-pre .eabcattendancereporttable .headcol {
+        left: 80px;
+    }
+}

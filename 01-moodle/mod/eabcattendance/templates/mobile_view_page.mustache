@@ -1,0 +1,144 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_eabcattendance/mobile_view_page
+
+    The main page to view the eabcattendance activity
+
+    Classes required for JS:
+    * None
+
+    Data attibutes required for JS:
+    * All data attributes are required
+
+    Context variables required for this template:
+    * eabcattendance
+    * summary
+    * cmid
+
+    Example context (json):
+    {
+        "eabcattendance": {
+            "id": "1",
+            "course": "2",
+            "name": "Class Eabcattendance",
+            "intro": "Intro"
+        },
+        "summary": {
+            "numtakensessions": "1",
+            "pointssessionscompleted": "2",
+            "percentagesessionscompleted": "2"
+        },
+        "cmid": "25",
+        "timestamp": "1234"
+    }
+}}
+{{=<% %>=}}
+<div class="eabcattendance_mobile_view_page">
+    <core-course-module-description description="<% eabcattendance.intro %>" component="mod_eabcattendance" componentId="<% cmid %>"></core-course-module-description>
+    <%#showmessage%>
+    <%#messages%>
+    <span class="messages">
+        <ion-item>
+            {{ 'plugin.mod_eabcattendance.<% string %>' | translate }}
+        </ion-item>
+    </span>
+    <%/messages%>
+    <%/showmessage%>
+    <%#sessions%>
+    <ion-item>
+        <h2><% time %></h2>
+        <h3><% groupname %></h3>
+        <h3><% currentstatus %></h3>
+        <%#sessid%>
+        <button ion-button core-site-plugins-new-content component="mod_eabcattendance" method="<% eabcattendancefunction %>" [args]="{cmid: <% cmid %>, courseid: <% courseid %>, sessid: <% sessid %>, timestamp: <% timestamp %>}">
+            {{ 'plugin.mod_eabcattendance.submiteabcattendance' | translate }}
+        </button>
+        <%/sessid%>
+    </ion-item>
+    <%/sessions%>
+    <ion-item>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.sessionscompleted' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.numtakensessions %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.pointssessionscompleted' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.pointssessionscompleted %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.percentagesessionscompleted' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.percentagesessionscompleted %>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.sessionstotal' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.numallsessions %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.pointsallsessions' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.percentagesessionscompleted %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.percentageallsessions' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.allsessionspercentage %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.maxpossiblepoints' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.maxpossiblepoints %>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col col-9 class="text-left">
+                {{ 'plugin.mod_eabcattendance.maxpossiblepercentage' | translate }}
+            </ion-col>
+            <ion-col col-2 class="text-left">
+                <% summary.maxpossiblepercentage %>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+    </ion-item>
+</div>

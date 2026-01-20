@@ -1,0 +1,255 @@
+<div class="container" id="top">
+    <div class="panel panel-default">
+        <div class="panel-heading h2"></div>
+        <div class="panel-body">
+            <table class="table table-bordered ">
+                <tr class="text-center">
+                    <th> </th>
+                    <th>{{# str }} Pendientes, local_eabcpanelcursos {{/ str }} </th>
+                    <th>{{# str }} Atrasados, local_eabcpanelcursos {{/ str }}</th>
+                    <th>{{# str }} Fuera_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+                    <th>{{# str }} Cerrados_tiempo, local_eabcpanelcursos {{/ str }} </th>
+                    <th>{{# str }} En_proceso, local_eabcpanelcursos {{/ str }} </th>
+                    <th>{{# str }} Suspendidos_previo, local_eabcpanelcursos {{/ str }} </th>
+                    <th>{{# str }} Suspendidos_durante, local_eabcpanelcursos {{/ str }} </th>
+                    <!-- <th >{{# str }} No_iniciados, local_eabcpanelcursos {{/ str }} </th>-->
+                    <th>Total cerrados </th>
+                    <th>{{# str }} Total_cursos, local_eabcpanelcursos {{/ str }} </th>
+                </tr>
+                {{#actividades}} {{#estatus}}
+                <tr class="text-center">
+                    <th>{{# str }} Cantidades, local_eabcpanelcursos {{/ str }}</th>
+                    <td class="h2 bg-warning text-white "><a href="#t_pendientes" class="deco-none"> {{pendiente}}</a> </td>
+                    <td class="h2 bg-danger text-white"><a href="#t_atrasado" class="deco-none">{{atrasado}} </a> </td>
+                    <td class="h2 bg-secondary"><a href="#t_fuera_tiempo" class="deco-none">{{fuera_tiempo}} </a> </td>
+                    <td class="h2 bg-success text-white"><a href="#t_a_tiempo" class="deco-none">{{a_tiempo}} </a> </td>
+
+                    <td class="h2 bg-info text-white"><a href="#t_en_procesos" class="deco-none">{{en_proceso}} </a> </td>
+                    <td class="h2 text-light bg-dark"><a href="#t_suspendidos_previo" class="deco-none">{{suspendido_previo}} </a> </td>
+                    <td class="h2 text-white bg-dark"><a href="#t_suspendidos_durante" class="deco-none">{{suspendido_durante}} </a> </td>
+                    <!--<td class="h2 bg-primary text-white" ><a href="#t_no_iniciados" class="deco-none">{{no_iniciado}} </a> </td>-->
+                    <td class="h2">{{totalCerrados}} </td>
+                    <td class="h2">{{totalCursos}}</td>
+                </tr>
+                {{/estatus}} {{#porcentajes}}
+                <tr class="text-center">
+                    <th>{{# str }} Porcentajes, local_eabcpanelcursos {{/ str }}</th>
+                    <td class="h3 text-warning">{{pendiente}} %</td>
+                    <td class="h3 text-danger">{{atrasado}} %</td>
+                    <td class="h3">{{fuera_tiempo}} %</td>
+                    <td class="h3">{{a_tiempo}} %</td>
+                    <td class="h3 ">{{en_proceso}} %</td>
+                    <td class="h3 ">{{suspendido_previo}} %</td>
+                    <td class="h3 ">{{suspendido_durante}} %</td>
+                    <!--<td class="h3 ">{{no_iniciado}} %</td>-->
+                    <td class="h3">{{totalCerrados}} %</td>
+                    <td class="h3">100 %</td>
+                </tr>
+                {{/porcentajes}} {{/actividades}}
+            </table>
+        </div>
+    </div>
+</div>
+<br><br><br>
+<div class="container">
+
+    <table id="t_pendientes" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_pendientes, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#pendiente}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_final_curso}}
+            </td>
+            fecha_de_cierre
+            <td>
+                {{fecha_mas_horas_tope}}
+            </td>
+        </tr>
+        {{/pendiente}} {{/actividades}}
+        <tr>
+            <td colspan="3"><small><b>{{# str }} pendientes_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} pendientes_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+
+    <hr><br><br><br>
+    <table id="t_atrasado" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_Atrasados, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#atrasado}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_final_curso}}
+            </td>
+            <td>
+                {{fecha_mas_horas_tope}}
+            </td>
+        </tr>
+        {{/atrasado}} {{/actividades}}
+        <tr>
+            <td colspan="4"><small><b>{{# str }} atrasados_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} atrasados_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+    <table id="t_fuera_tiempo" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_Cerrados_fuera_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_cierre, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#fuera_tiempo}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_final_curso}}
+            </td>
+            <td>
+                {{fecha_de_cierre}}
+            </td>
+            <td>
+                {{fecha_mas_horas_tope}}
+            </td>
+        </tr>
+        {{/fuera_tiempo}} {{/actividades}}
+        <tr>
+            <td colspan="4"><small><b>{{# str }} fuera_plazo_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} fuera_plazo_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+
+    <table id="t_a_tiempo" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_Cerrados_en_tiempo, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_cierre, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#a_tiempo}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_final_curso}}
+            </td>
+            <td>
+                {{fecha_de_cierre}}
+            </td>
+            <td>
+                {{fecha_mas_horas_tope}}
+            </td>
+        </tr>
+        {{/a_tiempo}} {{/actividades}}
+        <tr>
+            <td colspan="4"><small><b>{{# str }} cerrados_tiempo_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} cerrados_tiempo_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+
+    <table id="t_en_procesos" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_en_proceso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#en_proceso}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_final_curso}}
+            </td>
+            <td>
+                {{fecha_mas_horas_tope}}
+            </td>
+        </tr>
+        {{/en_proceso}} {{/actividades}}
+        <tr>
+            <td colspan="3"><small><b>{{# str }} proceso_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} proceso_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+
+    <table id="t_suspendidos_previo" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_suspendido_previo, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} fecha_inicio, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_suspendido, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#suspendido_previo}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_inicio}}
+            </td>
+            <td>
+                {{fecha_suspencion}}
+            </td>
+        </tr>
+        {{/suspendido_previo}} {{/actividades}}
+        <tr>
+            <td colspan="3"><small><b>{{# str }} suspendido_previo_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} suspendido_previo_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+
+    <table id="t_suspendidos_durante" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_suspendido_durante, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} fecha_inicio, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_suspendido, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}} {{#suspendido_durante}}
+        <tr>
+            <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a> </td>
+            <td>
+                {{fecha_inicio}}
+            </td>
+            <td>
+                {{fecha_suspencion}}
+            </td>
+        </tr>
+        {{/suspendido_durante}} {{/actividades}}
+        <tr>
+            <td colspan="3"><small><b>{{# str }} suspendido_durante_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} suspendido_durante_small, local_eabcpanelcursos {{/ str }}</small></td>
+        </tr>
+    </table>
+    <div class="text-right"><a href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    <hr><br><br><br>
+    <!--
+    <table id="t_no_iniciados" class="table table-bordered  table-striped">
+        <tr>
+            <th class="h4">{{# str }} Cursos_no_iniciados, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_fin_del_curso, local_eabcpanelcursos {{/ str }}</th>
+            <th>{{# str }} Fecha_de_plazo, local_eabcpanelcursos {{/ str }}</th>
+        </tr>
+        {{#actividades}}
+            {{#no_iniciado}}        
+            <tr>
+                <td> <a href="../../course/view.php?id={{idcurso}}">{{curso}}</a>  </td>
+                <td>
+                    {{fecha_final_curso}}
+                </td>
+                <td>
+                    {{fecha_mas_horas_tope}}
+                </td>
+            </tr>        
+            {{/no_iniciado}}        
+        {{/actividades}}  
+        <tr><td colspan="3"><small><b>{{# str }} no_iniciados_small_bold, local_eabcpanelcursos {{/ str }}</b> {{# str }} no_iniciados_small, local_eabcpanelcursos {{/ str }}</small></td></tr>        
+    </table>
+    <div class="text-right"><a  href="#top">{{# str }} Volver_arriba, local_eabcpanelcursos {{/ str }} <i class="fa fa-angle-up"></i></a> </div>
+    -->
+</div>

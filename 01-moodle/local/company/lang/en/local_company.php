@@ -1,0 +1,32 @@
+<?php
+
+$string['pluginname'] = 'Companies';
+$string['managecompanies'] = 'Manage companies';
+$string['companyname'] = 'Name';
+$string['companyshortname'] = 'Short name';
+$string['companycity'] = 'City';
+$string['companyrut'] = 'RUT';
+$string['createcompany'] = 'Create company';
+$string['companycontrato'] = 'Contract';
+$string['savecompany'] = 'Save company';
+$string['companycreated'] = 'Company created successfully';
+$string['companycreateerror'] = 'There was an error creating the company';
+$string['defaultcountry'] = 'CL';
+$string['companyupdated'] = 'Company updated successfully';
+$string['companyupdateerror'] = 'There was an error updating the company';
+$string['actions'] = 'Actions';
+$string['edit'] = 'Edit';
+$string['nocompanies'] = 'No companies found';
+$string['search'] = 'Search';
+$string['searchbutton'] = 'Search';
+$string['perpage'] = 'Per page';
+$string['assignusers'] = 'Assign users';
+$string['assignselected'] = 'Assign selected users';
+$string['usersassigned'] = 'Assigned {$a} users to the company';
+$string['nousersunassigned'] = 'No unassigned users found';
+$string['assignedusers'] = 'Assigned users';
+$string['unassignselected'] = 'Unassign selected users';
+$string['usersunassigned'] = 'Unassigned {$a} users from the company';
+$string['nousersassigned'] = 'No users assigned to this company';
+$string['remove'] = 'Remove';
+$string['backtoindex'] = 'Back to companies list';

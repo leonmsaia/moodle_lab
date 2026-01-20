@@ -1,0 +1,29 @@
+<div class="container" id="top">
+    <div class="panel panel-default">
+        <div class="panel-heading h2"></div>
+        <div class="panel-body">
+            
+            <table class="table table-bordered ">                
+                <tr class="text-center">   
+                    <th class="bg-success">{{# str }} total_cumplimiento, local_feedback_facilitador {{/ str }} </th>
+                    <th class="bg-info">{{# str }} cantidad_cursos, local_feedback_facilitador {{/ str }} </th>
+                    <th class="bg-info">{{# str }} recomienda_curso, local_feedback_facilitador {{/ str }}</th>
+                    <th class="bg-info">{{# str }} envio_correo, local_feedback_facilitador {{/ str }}</th>
+                    <th class="bg-info">{{# str }} llamo_empresa, local_feedback_facilitador {{/ str }} </th>
+                    <th class="bg-info">{{# str }} encuesta_curso, local_feedback_facilitador {{/ str }} </th>
+                    
+                </tr>
+                {{#totales}} 
+                <tr class="text-center">
+                    <td class="h2 bg-success" > {{total_cumplimiento}}% </td>
+                    <td class="h2 ">{{cantidad_cursos}}  </td>
+                    <td class="h2 ">{{recomienda_curso}}%  </td>
+                    <td class="h2 ">{{envio_correo}}%  </td>
+                    <td class="h2 " >{{llamo_empresa}}%  </td>
+                    <td class="h2 " >{{encuesta_curso}}%  </td>
+                </tr>
+                {{/totales}} 
+            </table>
+        </div>
+    </div>
+</div>    

@@ -1,0 +1,23 @@
+Conection string  = Endpoint=https://deveus2sbusintcap001.servicebus.windows.net/;SharedAccessKeyName=FRONT;SharedAccessKey=l6xpPAoS4aA/98qGppgxLR7B0tYW96xjXb/e3yawOxo=
+Token API         = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJncnAiOiJNVVRVQUwiLCJ2cnNuIjoiMi4wIiwiYXBwIjoiQXBsaWNhY2nDs24gZGUgZXNjcml0b3JpbyIsInJvbGUiOiJKRUZFIFBSUCIsInJvbGVJZCI6IjYiLCJleHAiOjE1OTExNDM3MDMsImlzcyI6Ik11dHVhbC5JQS5Ub2tlblBvcnRhbCIsImF1ZCI6Ik11dHVhbC5JQS5BUEkifQ.45EEQ0Oz8f8K8000gNBvLvfXqveGAzKaC18QtCzDyE0
+Subscription key  = a205a2da328946e99bae9d3894879a01
+Subscription      = FRONT
+Topic             = backcambiocatalogocursos
+Endpoint Cursos   = https://devapimapiadh001.azure-api.net/integracion/cursos/
+Ruta archivo .mbz = /var/www/html/local/pubsub/MBZ/default.mbz
+
+Course Name       = ProductoCurso
+Course Shortname  = CodigoCurso
+Course Category   = 
+
+get_config('local_pubsub', 'conectionstring')
+get_config('local_pubsub', 'subscriptionkey')
+get_config('local_pubsub', 'subscription')
+get_config('local_pubsub', 'topic')
+get_config('local_pubsub', 'tokenapi')
+get_config('local_pubsub', 'endpointcursos')
+get_config('local_pubsub', 'archivombz')
+get_config('local_pubsub', 'rutaarchivombz')
+get_config('local_pubsub', 'coursename')
+get_config('local_pubsub', 'courseshortname')
+get_config('local_pubsub', 'coursecategory')

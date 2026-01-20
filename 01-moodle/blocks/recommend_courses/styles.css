@@ -1,0 +1,46 @@
+.block_recommend_courses img.profilepicture {
+    height: 100px;
+    width: 100px;
+}
+
+.block_recommend_courses .recommend_coursesitem.fullname {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.block_recommend_courses .recommend_coursesitem.edit {
+    text-align: right;
+}
+.block .card-body .card-title, .block .userprofile .profile_tree section .card-title, .userprofile .profile_tree .block section .card-title .block_recommend_courses{
+	    width: 100% !important;
+	    text-align: center;
+}
+.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well{
+		    border-radius: 20px;
+}
+[data-region="blocks-column"] .block_recommend_courses{
+    border-radius: 20px !important;
+    border-color: #8fc023 !important;
+
+    /*text-align: center;*/
+    background: linear-gradient(0deg,#fff 0%,#8FC023 100%);
+    padding: 0px 10px;
+    margin-left: -9px;
+}
+.block .card-body .content, .block .userprofile .profile_tree section .content, .userprofile .profile_tree .block section .content .block_recommend_courses{
+	border-radius: 20px;
+}
+.block_recommend_courses h5 {
+    color: white !important;
+    font-weight: bold;
+}
+
+ .block_recommend_courses .fa{
+ 	color: #B1CE56;
+ }
+ .block .card-body .content, .block .userprofile .profile_tree section .content, .userprofile .profile_tree .block section .content .block_recommend_courses{
+ 	    padding: 5px 7px !important;
+ }  
+ .block_recommend_courses a{
+ 	color: gray !important;
+ }

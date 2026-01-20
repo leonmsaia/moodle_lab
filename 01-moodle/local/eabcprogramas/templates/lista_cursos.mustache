@@ -1,0 +1,36 @@
+{{#pdf}}
+<a href="{{pdf}}" target="_blank" class="btn btn-primary active">Exportar PDF</a>
+{{/pdf}}
+{{#back}}
+<a href="{{back}}" class="btn btn-primary">Regresar</a>
+{{/back}}
+{{#programa}}
+<br>
+<span>Cursos del Programa: <i><b>{{description}}</b></i></span><br>
+<span>Fecha: <i><b>{{fecha}}</b></i></span>
+<br>
+<hr>
+{{/programa}}
+<div class="table-responsive">
+  <table class="table" id="list-courses">
+    <thead>
+    <tr>
+      <th scope="col" WIDTH="30"><i><b>ID</b></i></th>
+      <th scope="col"><i><b>Curso</b></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#courses}}
+    <tr>
+      <td WIDTH="30">{{id}}</td>
+      <td>{{fullname}}</td>
+    </tr>
+    {{/courses}}
+    
+  </tbody>
+  </table>
+<hr><h4>Objetivos</h4>
+{{#programa}}
+{{{objetivos}}}
+{{/programa}}
+</div>

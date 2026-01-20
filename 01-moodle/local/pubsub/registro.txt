@@ -1,0 +1,332 @@
+Friday 7th of February 2020 11:14:14 AM ... ERROR: Actualizacion del curso  test7 Fallida: El guid: c836d9a3-1b49-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:16:02 AM ... ERROR: Actualizacion del curso   Fallida: El guid: c591cf35-1249-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:17:29 AM ... ERROR: Actualizacion del curso  test2 Fallida: El guid: f46913b3-1249-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:51:40 AM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:51:56 AM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:52:00 AM ... ERROR: Actualizacion del curso  eabc_prueba60 Fallida: El guid: 2fceb23f-9d49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:53:53 AM ... ERROR: Actualizacion del curso  eabc_prueba60 Fallida: El guid: 2fceb23f-9d49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:54:00 AM ... ERROR: Actualizacion del curso  eabc_prueba60 Fallida: El guid: 2fceb23f-9d49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:54:06 AM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:55:58 AM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 11:59:25 AM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 01:11:46 PM ... ERROR: Actualizacion del curso  eabc_prueba61 Fallida: El guid: e71ed6d2-9f49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 01:11:50 PM ... ERROR: Actualizacion del curso  eabc_prueba60 Fallida: El guid: 2fceb23f-9d49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 01:24:59 PM ... ERROR: Actualizacion del curso  Actitudes Preventivas Fallida: El guid: 05e06999-ea36-ea11-a812-000d3a4ed4e6 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:20 PM ... ERROR: Actualizacion del curso  eabc_prueba67 Fallida: El guid: d607d77d-d649-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:28 PM ... ERROR: Actualizacion del curso  eabc_prueba67 Fallida: El guid: d607d77d-d649-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:31 PM ... ERROR: Actualizacion del curso  eabc_prueba66 Fallida: El guid: 85f785d6-d349-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:34 PM ... ERROR: Actualizacion del curso  eabc_prueba67 Fallida: El guid: d607d77d-d649-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:40 PM ... ERROR: Actualizacion del curso  eabc_prueba67 Fallida: El guid: d607d77d-d649-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:44 PM ... ERROR: Actualizacion del curso  Extintores Fallida: El guid: c6368f44-cf49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:49 PM ... ERROR: Actualizacion del curso  Extintores Fallida: El guid: c6368f44-cf49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:36:54 PM ... ERROR: Actualizacion del curso  eabc_prueba67 Fallida: El guid: d607d77d-d649-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:49:38 PM ... ERROR: Actualizacion del curso  eabc_prueba69 Fallida: El guid: b72eda70-da49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 06:49:42 PM ... ERROR: Actualizacion del curso  eabc_prueba69 Fallida: El guid: b72eda70-da49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 07:20:19 PM ... ERROR: Actualizacion del curso  eabc_prueba70 Fallida: El guid: 65d8b8fc-db49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 07:20:29 PM ... ERROR: Actualizacion del curso  eabc_prueba69 Fallida: El guid: b72eda70-da49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Friday 7th of February 2020 07:20:34 PM ... ERROR: Actualizacion del curso  eabc_prueba70 Fallida: El guid: 65d8b8fc-db49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 04:51:54 PM ... ERROR: Actualizacion del curso  eabc_prueba66 Fallida: El guid: 85f785d6-d349-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 04:51:59 PM ... ERROR: Actualizacion del curso  eabc_prueba71 Fallida: El guid: a48d762a-244c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 04:52:02 PM ... ERROR: Actualizacion del curso  eabc_prueba71 Fallida: El guid: a48d762a-244c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 04:52:13 PM ... ERROR: Actualizacion del curso  eabc_prueba72 Fallida: El guid: a154d568-254c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:02:24 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: fd489d04-264c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:02:28 PM ... ERROR: Actualizacion del curso  eabc_prueba71 Fallida: El guid: a48d762a-244c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:02:32 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: fd489d04-264c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:09:28 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: fd489d04-264c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:09:31 PM ... ERROR: Actualizacion del curso  eabc_prueba72 Fallida: El guid: a154d568-254c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:16:33 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: 5ec207f3-284c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:16:38 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: 5ec207f3-284c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 05:16:51 PM ... Creado el curso: eabc_prueba73, El guid: 5ec207f3-284c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 05:17:48 PM ... Actualizado el curso: eabc_prueba73, El guid: 5ec207f3-284c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 05:17:52 PM ... ERROR: Actualizacion del curso  eabc_prueba72 Fallida: El guid: a154d568-254c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:18 PM ... ERROR: Actualizacion del curso  eabc_prueba75 Fallida: El guid: 62a3d440-2e4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:24 PM ... ERROR: Actualizacion del curso  eabc_prueba75 Fallida: El guid: 62a3d440-2e4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:28 PM ... ERROR: Actualizacion del curso  eabc_prueba76 Fallida: El guid: 81021b6d-2f4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:31 PM ... ERROR: Actualizacion del curso  eabc_prueba75 Fallida: El guid: 62a3d440-2e4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:36 PM ... ERROR: Actualizacion del curso  eabc_prueba76 Fallida: El guid: 81021b6d-2f4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:09:42 PM ... Creado el curso: eabc_prueba76, El guid: 81021b6d-2f4c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:10:46 PM ... ERROR: Actualizacion del curso  eabc_prueba70 Fallida: El guid: 65d8b8fc-db49-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:10:51 PM ... Creado el curso: eabc_prueba71, El guid: a48d762a-244c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:12:46 PM ... Actualizado el curso: eabc_prueba76, El guid: 81021b6d-2f4c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:20:37 PM ... Creado el curso: eabc_prueba78, El guid: 375b898f-314c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:22:36 PM ... Creado el curso: eabc_prueba70, El guid: 65d8b8fc-db49-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:22:58 PM ... Actualizado el curso: eabc_prueba73, El guid: 5ec207f3-284c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:23:01 PM ... Actualizado el curso: eabc_prueba78, El guid: 375b898f-314c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:29:45 PM ... ERROR: Actualizacion del curso  eabc_prueba80 Fallida: El guid: a141e62c-334c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:29:48 PM ... Actualizado el curso: eabc_prueba78, El guid: 375b898f-314c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:54:53 PM ... ERROR: Actualizacion del curso  eabc_prueba80 Fallida: El guid: a141e62c-334c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 06:54:57 PM ... Creado el curso: eabc_prueba80, El guid: a141e62c-334c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:55:19 PM ... Actualizado el curso: eabc_prueba70, El guid: 65d8b8fc-db49-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:55:24 PM ... Actualizado el curso: eabc_prueba80, El guid: a141e62c-334c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:59:15 PM ... Actualizado el curso: eabc_prueba80, El guid: a141e62c-334c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 06:59:20 PM ... Actualizado el curso: eabc_prueba80, El guid: a141e62c-334c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:02:07 PM ... Actualizado el curso: eabc_prueba80, El guid: a141e62c-334c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:02:17 PM ... Actualizado el curso: eabc_prueba78, El guid: 375b898f-314c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:02:24 PM ... Actualizado el curso: eabc_prueba76, El guid: 81021b6d-2f4c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:10:17 PM ... Actualizado el curso: eabc_prueba78, El guid: 375b898f-314c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:12:36 PM ... ERROR: Actualizacion del curso  eabc_prueba75 Fallida: El guid: 62a3d440-2e4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 07:13:23 PM ... Actualizado el curso: eabc_prueba71, El guid: a48d762a-244c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:21:40 PM ... ERROR: Actualizacion del curso  eabc_prueba72 Fallida: El guid: a154d568-254c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 07:21:46 PM ... ERROR: Actualizacion del curso  eabc_prueba73 Fallida: El guid: fd489d04-264c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 07:33:43 PM ... ERROR: Actualizacion del curso  eabc_prueba82 Fallida: El guid: 378ffd03-3c4c-ea11-a812-000d3a4f62e7 no coincide con ninguno de los cursos registrados
+
+Monday 10th of February 2020 07:34:49 PM ... Creado el curso: eabc_prueba82, El guid: 378ffd03-3c4c-ea11-a812-000d3a4f62e7
+
+Monday 10th of February 2020 07:35:20 PM ... Actualizado el curso: eabc_prueba82, El guid: 378ffd03-3c4c-ea11-a812-000d3a4f62e7
+
+Tuesday 11th of February 2020 04:26:36 PM ... ERROR: Actualizacion del curso  Aplicación del Cuestionario de Cultura de Seguridad Fallida: El guid: a6d8c2e6-000b-ea11-a812-000d3a4e6dc6 no coincide con ninguno de los cursos registrados
+
+Tuesday 11th of February 2020 04:26:40 PM ... ERROR: Actualizacion del curso  Aplicación del Cuestionario de Cultura de Seguridad Fallida: El guid: a6d8c2e6-000b-ea11-a812-000d3a4e6dc6 no coincide con ninguno de los cursos registrados
+
+Tuesday 11th of February 2020 04:26:44 PM ... ERROR: Actualizacion del curso  Aplicación del Cuestionario de Cultura de Seguridad Fallida: El guid: a6d8c2e6-000b-ea11-a812-000d3a4e6dc6 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:14:56 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:02 PM ... ERROR: Actualizacion del curso  xzvcbv Fallida: El guid: 680682f5-1753-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:10 PM ... ERROR: Actualizacion del curso  212112 Fallida: El guid: 7400c8a0-3053-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:14 PM ... Creado el curso: fsdff, El guid: 8d380886-1f53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:15:36 PM ... ERROR: Actualizacion del curso  wwwww Fallida: El guid: 61c48561-2f53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:40 PM ... ERROR: Actualizacion del curso  dsdssd Fallida: El guid: 51b2143c-3f53-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:43 PM ... ERROR: Actualizacion del curso  dsds Fallida: El guid: 5114d822-4053-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:47 PM ... ERROR: Actualizacion del curso  dsdsddddd Fallida: El guid: 5ea16347-4053-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:55 PM ... ERROR: Actualizacion del curso  fdfdfddf Fallida: El guid: 6ed52800-3f53-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:15:59 PM ... ERROR: Actualizacion del curso  pruebas js Fallida: El guid: 832da1ca-2053-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:02 PM ... Creado el curso: s, El guid: 1027ac36-2453-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:16:18 PM ... Creado el curso: sssdddd, El guid: 61ead452-2a53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:16:34 PM ... ERROR: Actualizacion del curso  4343 Fallida: El guid: 85d52506-3253-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:37 PM ... ERROR: Actualizacion del curso   Fallida: El guid: 8fe9c00a-1753-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:42 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:48 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:53 PM ... ERROR: Actualizacion del curso  fff Fallida: El guid: 8a2145b1-2b53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:16:57 PM ... ERROR: Actualizacion del curso  producto test Fallida: El guid: 54c06cae-2353-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:17:00 PM ... ERROR: Actualizacion del curso  producto test Fallida: El guid: 54c06cae-2353-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:17:04 PM ... ERROR: Actualizacion del curso  323232 Fallida: El guid: eaa81f5b-2c53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:17:07 PM ... ERROR: Actualizacion del curso  wwwww Fallida: El guid: 61c48561-2f53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:17:12 PM ... Creado el curso: 212112, El guid: 7400c8a0-3053-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:17:30 PM ... Creado el curso: 4343, El guid: 85d52506-3253-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:17:45 PM ... Actualizado el curso: fsdff, El guid: 8d380886-1f53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:17:48 PM ... ERROR: Actualizacion del curso  sds Fallida: El guid: c2df118a-3f53-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:17:52 PM ... Creado el curso: fdfdfds, El guid: aca7b342-4353-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:18:10 PM ... ERROR: Actualizacion del curso  aaa Fallida: El guid: 8b6b3cf8-3f53-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:18:13 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 74170cb4-2d53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:18:17 PM ... ERROR: Actualizacion del curso  dsdssd Fallida: El guid: 51b2143c-3f53-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:18:20 PM ... Creado el curso: pruebas js, El guid: 832da1ca-2053-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:18:37 PM ... ERROR: Actualizacion del curso   Fallida: El guid: 6ed09307-1853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:18:40 PM ... ERROR: Actualizacion del curso  dddddd Fallida: El guid: 5e0d68de-2a53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:18:43 PM ... Creado el curso: aaa, El guid: 8b6b3cf8-3f53-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:23:01 PM ... ERROR: Actualizacion del curso  d Fallida: El guid: e27453fa-2353-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:25:37 PM ... Creado el curso: dsdsds, El guid: 348a0f40-4253-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:25:58 PM ... Creado el curso: producto test, El guid: 54c06cae-2353-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:26:18 PM ... ERROR: Actualizacion del curso   Fallida: El guid: aa280f5e-1853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:26:21 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:26:24 PM ... ERROR: Actualizacion del curso  fff Fallida: El guid: 8a2145b1-2b53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:26:28 PM ... Creado el curso: dsdss, El guid: 06cbfa48-2c53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:27:19 PM ... ERROR: Actualizacion del curso   Fallida: El guid: cec5cbf8-1653-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:27:23 PM ... Creado el curso: fdfdfddf, El guid: 6ed52800-3f53-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:27:38 PM ... Creado el curso: eee, El guid: 74170cb4-2d53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:27:56 PM ... ERROR: Actualizacion del curso  ff Fallida: El guid: 27913417-2d53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:27:58 PM ... Actualizado el curso: sssdddd, El guid: 61ead452-2a53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:28:04 PM ... ERROR: Actualizacion del curso  e Fallida: El guid: 10c16bbd-3153-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:28:10 PM ... Creado el curso: dsdssd, El guid: 51b2143c-3f53-ea11-a812-000d3a4f6c1a
+
+Wednesday 19th of February 2020 06:28:30 PM ... ERROR: Actualizacion del curso   Fallida: El guid: 2880f544-1153-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:28:33 PM ... Creado el curso: dddddd, El guid: 5e0d68de-2a53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:28:54 PM ... ERROR: Actualizacion del curso  ff Fallida: El guid: 27913417-2d53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:28:57 PM ... ERROR: Actualizacion del curso  ewew Fallida: El guid: fa3accec-2c53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:29:01 PM ... ERROR: Actualizacion del curso  dsdsddddd Fallida: El guid: 5ea16347-4053-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:29:05 PM ... Creado el curso: 323232, El guid: eaa81f5b-2c53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:29:19 PM ... Creado el curso: xzvcbv, El guid: 680682f5-1753-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:40:18 PM ... Creado el curso: wwwww, El guid: 61c48561-2f53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:40:46 PM ... ERROR: Actualizacion del curso  dsdsds Fallida: El guid: cc5d0078-4253-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:40:50 PM ... ERROR: Actualizacion del curso  dsdsds Fallida: El guid: cc5d0078-4253-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Wednesday 19th of February 2020 06:40:53 PM ... Creado el curso: ff, El guid: 27913417-2d53-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:52:05 PM ... Actualizado el curso: dsdsds, El guid: 348a0f40-4253-ea11-a812-000d3a4f6db7
+
+Wednesday 19th of February 2020 06:52:18 PM ... ERROR: Actualizacion del curso  fff Fallida: El guid: 8a2145b1-2b53-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Thursday 20th of February 2020 05:04:26 PM ... ERROR: Actualizacion del curso  e Fallida: El guid: 10c16bbd-3153-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Thursday 20th of February 2020 05:04:30 PM ... Actualizado el curso: ff, El guid: 27913417-2d53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:04:36 PM ... Actualizado el curso: eee, El guid: 74170cb4-2d53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:04:40 PM ... Actualizado el curso: dddddd, El guid: 5e0d68de-2a53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:04:43 PM ... Actualizado el curso: 212112, El guid: 7400c8a0-3053-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:04:47 PM ... Creado el curso: dsds, El guid: 5114d822-4053-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:05:07 PM ... Creado el curso: e, El guid: 10c16bbd-3153-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:05:27 PM ... Creado el curso: sds, El guid: c2df118a-3f53-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:05:43 PM ... Actualizado el curso: sds, El guid: c2df118a-3f53-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:05:46 PM ... Creado el curso: d, El guid: e27453fa-2353-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:06:04 PM ... Creado el curso: dddd, El guid: 620c23c9-3e53-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:06:19 PM ... Actualizado el curso: dddd, El guid: 620c23c9-3e53-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:06:23 PM ... ERROR: Actualizacion del curso  eee Fallida: El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Thursday 20th of February 2020 05:06:29 PM ... ERROR: Actualizacion del curso   Fallida: El guid: 8fe9c00a-1753-ea11-a812-000d3a4f6db7 no coincide con ninguno de los cursos registrados
+
+Thursday 20th of February 2020 05:06:33 PM ... ERROR: Actualizacion del curso  ddd Fallida: El guid: 41c39c38-3053-ea11-a812-000d3a4f6c1a no coincide con ninguno de los cursos registrados
+
+Thursday 20th of February 2020 05:06:35 PM ... Actualizado el curso: dsdsds, El guid: 348a0f40-4253-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:06:39 PM ... Creado el curso: eee, El guid: 46204bcd-2853-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:06:57 PM ... Creado el curso: ewew, El guid: fa3accec-2c53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:07:11 PM ... Actualizado el curso: sssdddd, El guid: 61ead452-2a53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:07:17 PM ... Actualizado el curso: s, El guid: 1027ac36-2453-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:07:21 PM ... Actualizado el curso: fdfdfds, El guid: aca7b342-4353-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:07:25 PM ... Actualizado el curso: fdfdfds, El guid: aca7b342-4353-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:07:29 PM ... Creado el curso: fff, El guid: 8a2145b1-2b53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:07:42 PM ... Actualizado el curso: dsdss, El guid: 06cbfa48-2c53-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:07:46 PM ... Actualizado el curso: 4343, El guid: 85d52506-3253-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:07:50 PM ... Creado el curso: ddd, El guid: 41c39c38-3053-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:08:05 PM ... Actualizado el curso: producto test, El guid: 54c06cae-2353-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 05:08:08 PM ... Creado el curso: dsdsddddd, El guid: 5ea16347-4053-ea11-a812-000d3a4f6c1a
+
+Thursday 20th of February 2020 05:08:24 PM ... Creado el curso: dsdsds, El guid: cc5d0078-4253-ea11-a812-000d3a4f6db7
+
+Thursday 20th of February 2020 06:30:05 PM ... Actualizado el curso: 4343, El guid: 85d52506-3253-ea11-a812-000d3a4f6c1a
+

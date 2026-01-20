@@ -1,0 +1,32 @@
+<section class="node_category">
+    <h3>Certificados</h3>
+    {{#presencialbool}} 
+        <ul>
+            <li>Presencial:</li>
+            {{#presencial}} 
+                <li>
+                    <span>
+                        <a target="_blank" href="{{cfg.wwwroot}}/local/download_cert/donwloadcertificate.php?courseid={{id}}">
+                            {{fullname}}
+                        </a>
+                    </span>
+                </li>
+            {{/presencial}}
+
+        </ul>
+    {{/presencialbool}}
+    {{#ilerningbool}} 
+        <ul>
+            <li>e-Learning:</li>
+            {{#elearning}} 
+                <li>
+                    <span>
+                        <a target="_blank" href="{{cfg.wwwroot}}/local/download_cert/donwloadcertificate.php?courseid={{id}}">
+                            {{fullname}}
+                        </a>
+                    </span>
+                </li>
+            {{/elearning}}
+        </ul>
+    {{/ilerningbool}}
+</section>

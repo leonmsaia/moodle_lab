@@ -1,0 +1,1 @@
+Plugin para monitorear el cumplimiento del cierre de cursos.

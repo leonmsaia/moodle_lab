@@ -1,0 +1,19 @@
+
+<form autocomplete="off" action="view.php" method="post" accept-charset="utf-8" class="mform">
+
+    <table>
+        <tr>
+            <td>Descripcion:</td>
+            <td><input type="text" name="descripcion" id="descripcion" data-attribute="descripcion"></td>
+        </tr>
+        <tr>
+            <td>Hora desde:</td>
+            <td><input type="time" name="hora_desde" id="hora_desde" required> <small class="text-danger">* </small></td>
+        </tr>
+        <tr>
+            <td>Hora hasta:</td>
+            <td><input type="time" name="hora_hasta" id="hora_hasta" required> <small class="text-danger">* </small></td>
+        </tr>
+    </table>
+    <div id="requeridos" class="text-center text-danger"></div>
+</form>

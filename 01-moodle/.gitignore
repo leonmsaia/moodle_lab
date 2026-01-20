@@ -1,0 +1,7 @@
+docker/.env
+/docker/.env
+./docker/.env
+
+docker/log/error.log
+/docker/log/error.log
+./docker/log/error.log

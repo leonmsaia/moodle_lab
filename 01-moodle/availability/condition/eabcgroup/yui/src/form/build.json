@@ -1,0 +1,10 @@
+{
+  "name": "moodle-availability_eabcgroup-form",
+  "builds": {
+    "moodle-availability_eabcgroup-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<div class="container">
+	<div class="row divsetbycourses">
+		<div class="container">
+			<div class="row">
+				<h2 class="reporttitle">{{courses_current}}</h2>
+			</div>
+			<br>
+			<div class="row divsetbycourses">
+				{{#rows_courses_current }}
+					{{#.}}
+						<div class="div20 divsetbycourses col-md-3 eabcdiv20">
+							<div class="datadiv eabcdatadiv">
+								<a href="{{{link}}}"><p class="datatext eabcdatatext">{{fullname}}</p> </a>
+								<p class="datatext eabcdatatext">{{remainingdays}}</p>
+								<p class="datatext eabcdatatext">{{date}}</p>  
+								<div class="alert alert-success eabc-alert-success" role="alert">
+									{{modalidad}}
+								</div>
+							</div>
+						</div>
+					{{/.}}
+				{{/rows_courses_current }}
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row divsetbycourses">
+		<div class="container">
+			<div class="row">
+				<h2 class="reporttitle">{{courses_not_current}}</h2>
+			</div>
+			<br>
+			<div class="row divsetbycourses">
+				{{#rows_courses_nocurrent }}
+					{{#.}}
+						<div class="div20 divsetbycourses col-md-3 eabcdiv20" style=" ">
+							<div class="datadiv">
+								<a href="{{{link}}}"><p class="datatext eabcdatatext">{{fullname}}</p> </a>
+								<p class="datatext eabcdatatext">{{remainingdays}}</p>
+								<p class="datatext eabcdatatext">{{date}}</p> 
+								<div class="alert alert-success eabc-alert-success" role="alert">
+									{{modalidad}}
+								</div> 
+							</div>
+						</div>
+					{{/.}}
+				{{/rows_courses_nocurrent }}
+			</div>
+		</div>
+	</div>
+</div>

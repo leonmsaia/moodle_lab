@@ -1,0 +1,15 @@
+
+<br>
+<br>
+<br>
+<form name="selcurso" id="selcurso"> 
+    <div class="form-group col-md">
+        <label for="motivo">Filtro por curso:</label>
+        <select class="form-control" name="cursos" id="cursos">
+            <option value="">Seleccione</option>
+            {{#all_cursos}}
+                <option value="{{id}}">{{fullname}}</option>
+            {{/all_cursos}}
+        </select>
+    </div>    
+</form>

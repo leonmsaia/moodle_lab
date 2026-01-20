@@ -1,0 +1,43 @@
+<definitions name="WebServiceDevMutual" targetNamespace="WebServiceDevMutual" xmlns:tns="WebServiceDevMutual" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+    <types>
+        <schema targetNamespace="http://www.ecerami.com/schema" xmlns="http://www.w3.org/2001/XMLSchema">
+            <complexType name="ArrayOfString">
+                <complexContent>
+                    <restriction base="soapenc:Array">
+                        <attribute ref="soapenc:arrayType" wsdl:arrayType="string[]"/>
+                    </restriction>
+                </complexContent>
+            </complexType>
+        </schema>
+    </types>
+    <message name="solicitudInscripcion">
+        <part name="token" type="xsd:string"/>
+        <part name="xml" type="xsd:string"/>
+    </message>
+    <message name="solicitudInscripcionResponse">
+        <part name="return" type="xsd:string"/>
+    </message>
+    <portType name="WebServiceDevPortType">
+        <operation name="solicitudInscripcion">
+            <input message="tns:solicitudInscripcion"/>
+            <output message="tns:solicitudInscripcionResponse"/>
+        </operation>
+    </portType>
+    <binding name="WebServiceDevBinding" type="tns:WebServiceDevPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="solicitudInscripcion">
+            <soap:operation soapAction="http://127.0.0.1/WebService/setInscripcion"/>
+            <input>
+                <soap:body use="encoded" namespace="http://127.0.0.1/WebService/setInscripcion" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="http://127.0.0.1/WebService/setInscripcion" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="WebServiceDevService">
+        <port name="WebServiceDevPort" binding="WebServiceDevBinding">
+            <soap:address location="https://mutualcl.aulainstitucional.com.ar/local/cron/solicitud_inscripcion.php"/>
+        </port>
+    </service>
+</definitions>

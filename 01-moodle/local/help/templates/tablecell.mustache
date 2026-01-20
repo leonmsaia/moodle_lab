@@ -1,0 +1,18 @@
+<table id="faqtable" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr class="faqheadertable">
+            <th>FAQ preguntas frecuentes</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    {{#faqs}}
+        <tr>
+            <td>
+                <div class="color-faq-title"> {{ title }}</div>
+                <div class="color-faq-coment"> {{ content }}</div>
+            </td>
+        </tr>
+    {{/faqs}}
+    </tbody>
+</table>

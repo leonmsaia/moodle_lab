@@ -1,0 +1,86 @@
+<div class="container-fluid" id="top">
+    <h2 class="text-center">Información general de correos</h2>
+    <br>
+    <table class="table table-bordered table-striped text-center">
+        <tr>
+            <td style='width: 50%'>
+                <h4>{{# str }} correos_devueltos, message_emma {{/ str }}</h4>
+                <table class="table table-bordered table-striped text-center">
+                    {{#devueltos}}
+                    <tr>
+                        <th class="text-left">{{# str }} total_devueltos, message_emma {{/ str }} </th>
+                        <td>{{total_devueltos}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} motivo_desconocido, message_emma {{/ str }}</th>
+                        <td>{{motivo_desconocido}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} motivo_rechazado_mail_malo, message_emma {{/ str }}</th>
+                        <td>{{motivo_rechazado_mail_malo}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} motivo_dominio_no_responde, message_emma {{/ str }}</th>
+                        <td>{{motivo_dominio_no_responde}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} motivo_casilla_llena_o_temporal, message_emma {{/ str }}</th>
+                        <td>{{motivo_casilla_llena_o_temporal}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} motivo_considerado_spam, message_emma {{/ str }}</th>
+                        <td>{{motivo_considerado_spam}} </td>
+                    </tr>
+                    {{/devueltos}}
+                </table>
+            </td>
+            <td>
+                <h4>{{# str }} info_campana, message_emma {{/ str }}</h4>
+                <table class="table table-bordered table-striped ">
+                    {{#campanainfo}}
+                    <tr>
+                        <th class="text-left">{{# str }} tema, message_emma {{/ str }}</th>
+                        <td>{{tema}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} fecha, message_emma {{/ str }}</th>
+                        <td>{{fecha}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} hora, message_emma {{/ str }}</th>
+                        <td>{{hora}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} fechafin, message_emma {{/ str }}</th>
+                        <td>{{fechafin}} </td>
+                    </tr>
+                    <tr>
+                        <th class="text-left">{{# str }} horafin, message_emma {{/ str }}</th>
+                        <td>{{horafin}} </td>
+                    </tr>
+
+                    {{/campanainfo}}
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h4>{{# str }} dominios_conflictivos, message_emma {{/ str }}</h4>
+                <table class="table table-bordered table-striped text-center">
+                    <tr>
+                        <th>{{# str }} dominio, message_emma {{/ str }}</th>
+                        <th>{{# str }} cantidad, message_emma {{/ str }}</th>
+                        <th>{{# str }} motivo, message_emma {{/ str }}</th>
+                    </tr>
+                    {{#campanaresultadoevento}}
+                    <tr>
+                        <td>{{dominio}} </td>
+                        <td>{{cantidad}} </td>
+                        <td>{{motivo}} </td>
+                    </tr>
+                    {{/campanaresultadoevento}}
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>

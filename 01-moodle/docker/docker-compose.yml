@@ -1,0 +1,63 @@
+services:
+  moodle:
+    container_name: mutual-45-moodle
+    image: moodlehq/moodle-php-apache:8.3
+    volumes:
+      - ${MOODLE_DIR}:/var/www/html
+      #- ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      #- ./log/error.log:/var/log/apache2/error.log
+      - ../moodle/config.php:/var/www/html/config.php
+      - ../course/format/eabctiles:/var/www/html/course/format/eabctiles
+      - ../local/pubsub:/var/www/html/local/pubsub
+      - ../local/help:/var/www/html/local/help
+      - ../local/mutualnotifications:/var/www/html/local/mutualnotifications
+      - ../local/mutual:/var/www/html/local/mutual
+      - ../local/download_cert:/var/www/html/local/download_cert
+      - ../local/sendgrade:/var/www/html/local/sendgrade
+      - ../local/validatestatus:/var/www/html/local/validatestatus
+      - ../local/password_company:/var/www/html/local/password_company
+      - ../local/eabccalendar:/var/www/html/local/eabccalendar
+      - ../local/resumencursos:/var/www/html/local/resumencursos
+      - ../local/eabcourses:/var/www/html/local/eabcourses
+      - ../local/mutualreport:/var/www/html/local/mutualreport
+      - ../local/checkconfig:/var/www/html/local/checkconfig
+      - ../local/company:/var/www/html/local/company
+      - ../local/holdingmng:/var/www/html/local/holdingmng
+      - ../local/cron:/var/www/html/local/cron
+      - ../local/eabcprogramas:/var/www/html/local/eabcprogramas
+      - ../local/questionnaire_report:/var/www/html/local/questionnaire_report
+      - ../local/showallactivities:/var/www/html/local/showallactivities
+      - ../local/rating_item:/var/www/html/local/rating_item
+      - ../local/eabcpanelcursos:/var/www/html/local/eabcpanelcursos
+      - ../local/encuesta_movilidad:/var/www/html/local/encuesta_movilidad
+      - ../local/enrolcompany:/var/www/html/local/enrolcompany
+      - ../local/feedback_facilitador:/var/www/html/local/feedback_facilitador
+      - ../local/survey_summary:/var/www/html/local/survey_summary
+      - ../message/output/emma/:/var/www/html/message/output/emma
+      - ../mod/eabcattendance:/var/www/html/mod/eabcattendance
+      - ../mod/linkgrade:/var/www/html/mod/linkgrade
+      - ../blocks/recommend_courses:/var/www/html/blocks/recommend_courses
+      - ../availability/condition/days:/var/www/html/availability/condition/days
+      - ../availability/condition/eabcgroup:/var/www/html/availability/condition/eabcgroup
+      - ../local/sso:/var/www/html/local/sso
+      - ../theme/mutualseguridad:/var/www/html/theme/mutualseguridad
+
+    ports:
+      - "${MOODLE_PORT}:80"
+  db:
+    container_name: mutual-45-mariabd
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: moodle
+      MYSQL_USER: moodleuser
+      MYSQL_PASSWORD: moodlepass
+  adminer:
+    container_name: mutual-45-adminer
+    image: adminer
+    ports:
+      - "${ADMINER_PORT}:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 600M

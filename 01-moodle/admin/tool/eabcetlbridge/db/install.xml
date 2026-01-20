@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="admin/tool/eabcetlbridge/db" VERSION="20251001" COMMENT="XMLDB file for tool EABC ETL Bridge"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="eabcetlbridge_config" COMMENT="Stores the general configuration for each migration type (strategies and queries).">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="shortname" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="strategyclass" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="sourcequery" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="mapping" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="isenabled" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="isautomatic" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="lastruntime" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="shortname" UNIQUE="true" FIELDS="shortname"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="eabcetlbridge_batch_file" COMMENT="Stores the uploaded files for manual or automated batch processing.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="configid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="FK to eabcetlbridge_config, defines the strategy for processing."/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="logid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="component" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Name of the component."/>
+        <FIELD NAME="filearea" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="Name of the file area."/>
+        <FIELD NAME="filename" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Name of the file."/>
+        <FIELD NAME="filepath" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="Path of the file."/>
+        <FIELD NAME="type" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Manual (0) or Automated (1)."/>
+        <FIELD NAME="delimiter" TYPE="char" LENGTH="10" NOTNULL="false" DEFAULT="semicolon" SEQUENCE="false" COMMENT="Delimiter used in the CSV file."/>
+        <FIELD NAME="encoding" TYPE="char" LENGTH="255" NOTNULL="false" DEFAULT="0UTF-8" SEQUENCE="false" COMMENT="Encoding used in the CSV file."/>
+        <FIELD NAME="qtylines" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Number of records/rows found in the CSV file."/>
+        <FIELD NAME="qtyrecords" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Number of records found in the CSV file."/>
+        <FIELD NAME="qtyrecordsprocessed" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Number of records processed from the CSV file."/>
+        <FIELD NAME="status" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="10" SEQUENCE="false" COMMENT="Processing status (Pending, Processing, Completed, Failed, ...)."/>
+        <FIELD NAME="errormessages" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Details of the error if processing failed."/>
+        <FIELD NAME="settings" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="Settings for the file."/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="configid_fk" TYPE="foreign" FIELDS="configid" REFTABLE="eabcetlbridge_config" REFFIELDS="id"/>
+        <KEY NAME="courseid_fk" TYPE="foreign" FIELDS="courseid" REFTABLE="course" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="configid_ix" UNIQUE="false" FIELDS="configid"/>
+        <INDEX NAME="courseid_ix" UNIQUE="false" FIELDS="courseid"/>
+        <INDEX NAME="status_ix" UNIQUE="false" FIELDS="status"/>
+        <INDEX NAME="type_ix" UNIQUE="false" FIELDS="type"/>
+        <INDEX NAME="timecreated_ix" UNIQUE="false" FIELDS="timecreated"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="eabcetlbridge_id_map" COMMENT="Stores the mapping between Moodle 3.5 and Moodle 4.5 IDs.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="source_type" TYPE="char" LENGTH="53" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="source_key" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="target_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="customint1" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="customint2" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="customchar1" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="customchar2" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="type_key_course" UNIQUE="true" FIELDS="source_type,source_key, courseid"/>
+        <INDEX NAME="courseid_ix" UNIQUE="false" FIELDS="courseid"/>
+        <INDEX NAME="type_course_ix" UNIQUE="false" FIELDS="source_type, courseid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="eabcetlbridge_planner" COMMENT="Stores hierarchical processing tasks for the ETL bridge.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="parenttaskid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" 
+          COMMENT="FK to self. Links a child task (e.g., user) to a parent task (e.g., course batch)."/>
+        <FIELD NAME="type" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false"
+          COMMENT="Task type, e.g., 'course_batch', 'user_grade_migration'."/>
+        <FIELD NAME="objective" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" 
+          COMMENT="Specific goal of the task, e.g., 'generate_grade_csv', 'process_user_record'."/>
+        <FIELD NAME="itemidentifier" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" 
+          COMMENT="The main identifier for the task item, e.g., courseid or userid."/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" 
+          COMMENT="Moodle course ID. Populated when available."/>
+        <FIELD NAME="batchfileid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" 
+          COMMENT="FK to eabcetlbridge_batch_file. Relevant for parent tasks."/>
+        <FIELD NAME="status" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="10" SEQUENCE="false" 
+          COMMENT="Processing status (Pending, Processing, Completed, Failed, ...)."/>
+        <FIELD NAME="configid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" 
+          COMMENT="FK to eabcetlbridge_config, defines the strategy for processing."/>
+        <FIELD NAME="usermodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="parenttaskid_fk" TYPE="foreign" FIELDS="parenttaskid" REFTABLE="eabcetlbridge_planner" REFFIELDS="id"/>
+        <KEY NAME="courseid_fk" TYPE="foreign" FIELDS="courseid" REFTABLE="course" REFFIELDS="id"/>
+        <KEY NAME="batchfileid_fk" TYPE="foreign" FIELDS="batchfileid" REFTABLE="eabcetlbridge_batch_file" REFFIELDS="id"/>
+        <KEY NAME="configid_fk" TYPE="foreign" FIELDS="configid" REFTABLE="eabcetlbridge_config" REFFIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="task_identifier_uk" UNIQUE="true" FIELDS="type, objective, itemidentifier, courseid, parenttaskid"/>
+        <INDEX NAME="type_status_ix" UNIQUE="false" FIELDS="type, status"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,217 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_mutualseguridad/footer
+
+    Page footer.
+
+    Example context (json):
+    {
+        "output": {
+            "page_doc_link": "Help and documentation",
+            "supportemail": "<a href=\"#\">Contact site support</a>",
+            "has_popover_links": true,
+            "services_support": "Services and support",
+            "login_info": "You are logged in as cute kitten",
+            "moodle_release": "90210"
+        }
+    }
+}}
+
+<footer id="page-footer">
+    <div class="mutualseguridad-container-fluid footer-columns">
+
+<div class="row">
+                    <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                        <div class="con con-1 w-100 py-5">
+                            <div class="con-info w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="ion-ios-call"></span>
+                                </div>
+                                <i class="fa fa-phone" style="font-size: 20px;
+    padding-bottom: 10px;"></i>
+                                <div class="text">
+                                    <span>(+56 2) 600 2000 555</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                        <div class="con con-2 w-100 py-5">
+                            <div class="con-info w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="ion-ios-mail"></span>
+                                </div>
+                                <i class="fa fa-envelope" style="font-size: 20px;
+    padding-bottom: 10px;"></i>
+                                <div class="text">
+                                    <span>info@mutualseguridad.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4 d-flex">
+                        <div class="con con-3 w-100 py-5">
+                            <div class="con-info w-100 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="ion-ios-pin"></span>
+                                </div>
+                                <i class="fa fa-globe" style="font-size: 20px;
+    padding-bottom: 10px;"></i>
+                                <div class="text">
+                                    <span>Av. Lib. Bernardo O`Higgins 194, Santiago de Chile.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="row">
+
+
+
+
+      
+            <div class="col-md-12 column-center" style="padding: 2rem;
+    border-top: 1px solid grey;">
+                 <div class="socialnetworks">
+
+                    <ul class="mb-0">
+                        {{#facebook}}
+                            <li>
+                                <a href="{{{facebook}}}" target="_blank" class="facebook btn btn-link btn-rounded">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                        {{/facebook}}
+
+                        {{#twitter}}
+                            <li>
+                                <a href="{{{twitter}}}" target="_blank" class="twitter btn btn-link btn-rounded">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        {{/twitter}}
+
+                        {{#linkedin}}
+                            <li>
+                                <a href="{{{linkedin}}}" target="_blank" class="linkedin btn btn-link btn-rounded">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        {{/linkedin}}
+
+                        {{#youtube}}
+                            <li>
+                                <a href="{{{youtube}}}" target="_blank" class="youtube btn btn-link btn-rounded">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                        {{/youtube}}
+
+                        {{#instagram}}
+                            <li>
+                                <a href="{{{instagram}}}" target="_blank" class="instagram btn btn-link btn-rounded">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        {{/instagram}}
+
+                        {{#whatsapp}}
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone={{{whatsapp}}}" target="_blank" class="whatsapp btn btn-link btn-rounded">
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        {{/whatsapp}}
+
+                        {{#telegram}}
+                            <li>
+                                <a href="{{{telegram}}}" target="_blank" class="telegram btn btn-link btn-rounded">
+                                    <i class="fa fa-telegram"></i>
+                                </a>
+                            </li>
+                        {{/telegram}}
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer-content-debugging footer-dark bg-dark text-light">
+        <div class="mutualseguridad-container-fluid footer-dark-inner">
+            {{{ output.debug_footer_html }}}
+        </div>
+    </div>
+
+    <div data-region="footer-container-popover">
+        {{#output.has_communication_links}}
+            <button onclick="window.open('{{output.communication_url}}', '_blank', 'noreferrer')" class="btn btn-icon bg-primary text-white icon-no-margin btn-footer-communication" aria-label="{{#str}}communicationroomlink, course{{/str}}">
+                {{#pix}}t/messages-o, core{{/pix}}
+            </button>
+        {{/output.has_communication_links}}
+        <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="{{#str}}showfooter, theme_boost{{/str}}">
+            {{#pix}}e/question, core{{/pix}}
+        </button>
+    </div>
+    <div class="footer-content-popover container d-none" data-region="footer-content-popover">
+        {{# output.has_popover_links }}
+            <div class="footer-section p-3 border-bottom">
+                {{# output.page_doc_link }}
+                    <div>{{{ output.page_doc_link }}}</div>
+                {{/ output.page_doc_link }}
+
+                {{# output.services_support_link }}
+                    <div>{{{ output.services_support_link }}}</div>
+                {{/ output.services_support_link }}
+            </div>
+        {{/ output.has_popover_links }}
+        <div class="footer-section p-3">
+            <div>{{#str}}poweredbymoodle, core{{/str}}</div>
+            {{#output.moodle_release}}
+                <div>
+                    {{#str}}version, core{{/str}} {{{ output.moodle_release }}}
+                </div>
+            {{/output.moodle_release}}
+        </div>
+    </div>
+
+<style>
+    .usertour {
+    display: none;
+}
+    
+</style>
+
+    <div class="copyright">
+        <div class="madeby d-none">
+            <p>{{#str}}themedevelopedby, theme_mutualseguridad{{/str}}</p>
+            <a href="https://conecti.me">
+                <img src="{{config.wwwroot}}/theme/mutualseguridad/pix/logo_conectime.svg" alt="Conecti.me" style="height: 40px;">
+            </a>
+        </div>
+    </div>
+</footer>
+
+{{{ output.standard_end_of_body_html }}}
+
+{{#js}}
+    require(['theme_boost/footer-popover'], function(FooterPopover) {
+        FooterPopover.init();
+    });
+{{/js}}

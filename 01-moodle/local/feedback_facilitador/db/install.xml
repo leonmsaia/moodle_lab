@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/feedback_facilitador/db" VERSION="20200605" COMMENT="XMLDB file for Moodle local/feedback_facilitador"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="panel_feedback_facilitadores" COMMENT="Tabla para facilitar el reporte de datos del panel de facilitadores">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="nombre" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="cumplimiento_plazo" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="cumplimiento_cierre" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="encuesta_facilitador" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="cumplimiento_horario" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="cantidad_cursos" TYPE="int" LENGTH="7" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="recomienda_curso" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="envio_correo" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="llamo_empresa" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="encuesta_curso" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+        <FIELD NAME="cantidad_cursos_suspendidos" TYPE="int" LENGTH="7" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="facilitador_id" TYPE="int" LENGTH="7" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="total_cumplimiento" TYPE="number" LENGTH="7" NOTNULL="false" SEQUENCE="false" DECIMALS="2"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
